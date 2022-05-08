@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Homework Doc</title>
+  </head>
+  <body>
+    <form action="names.html" method="post">
+      <fieldset style="width: 230px">
+        <legend>Applicant account creation</legend>
+        Username:
+        <input
+          type="text"
+          name="usr"
+          id="usr"
+          placeholder="Insert desired username"
+        />
+        <br />
+        First Name:<input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="Insert your First name"
+        />
+        <br />
+        Last Name:<input
+          type="text"
+          name="lname"
+          id="lname"
+          placeholder="Insert your Last name"
+        />
+        <br />
+        Password (8 characters minimum):<input
+          type="password"
+          name="pass"
+          id="pass"
+          minlength="8"
+          placeholder="Insert desired password"
+        />
+
+        <!--Error prompt if not minlenght is met , keysensitive,requirement for numbers in the password and show password button but i guess jscript needed -->
+        <br />
+        Terms and conditions:
+        <br />
+        <input type="radio" name="accord" value="Agree" />Agree
+        <br />
+        <input type="radio" name="accord" value="Disagree" />Disagree
+        <!--Would insert error prompt if disagree is selected but i guess i need jscript for that-->
+        <br />
+        <input type="submit" value="Send" />
+      </fieldset>
+    </form>
+  </body>
+</html>
